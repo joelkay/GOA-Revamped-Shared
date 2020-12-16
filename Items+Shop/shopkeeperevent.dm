@@ -91,8 +91,8 @@ obj
 
 		Chakra_Blade
 			name = "Chakra Blade"
-			eventcost = 100
-			cost = 100
+			eventcost = 40
+			cost = 40
 			limit = 0
 			icon = 'icons/projectiles.dmi'
 			icon_state = "chakra_blades"
