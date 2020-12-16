@@ -321,7 +321,7 @@ obj
 								if(defending_faction == A.faction:village)
 									A.repgain(10,"Winning a war.")
 					else if(capture_timer == capture_timelimit) //capture complete!
-						world << "[attacking_faction] has successfully captured the [src.name]!"
+						world << "[attacking_faction] has successfully captured land!"
 						switch(attacking_faction)
 							if("Konoha","Suna","Kiri")
 								icon_state = attacking_faction
@@ -335,7 +335,7 @@ obj
 						defending_faction = attacking_faction
 						countAttackers(49,150000)
 					else
-						world << "[attacking_faction]'s attempt to capture the [src.name] has been canceled"
+						world << "[attacking_faction]'s attempt to capture the land has been canceled"
 					status = null
 					reset_defending_faction()
 					reset_attacking_faction()
