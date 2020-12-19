@@ -600,7 +600,7 @@ obj
 				Large_Rasengan
 					icon_state="oodama_rasengan"
 				Camouflaged_Hiding
-					icon_state="Camouflage Concealment Technique"
+					icon_state="camo_hiding"
 				Chakra_Leech
 					icon_state="chakra_leach"
 				Transform

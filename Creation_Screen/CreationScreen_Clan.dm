@@ -174,8 +174,9 @@ obj
 						usr.DoneCreate()
 
 						if(usr.initialized)
-							usr.levelpoints=6
+							//usr.levelpoints=6
 							newsave = 1
+							/*
 							if(usr.build_creating)
 								while(usr && usr.blevel < 100)
 									usr.body=Req2Level(usr.blevel)+1
@@ -186,14 +187,15 @@ obj
 								usr.loc = locate_tag("maptag_skilltree_select")
 								usr:check_skill_tree()
 							else
-								world.SaveMob(usr,usr.client)
+							*/
+							world.SaveMob(usr,usr.client)
 
-								usr.faction:AddMember(usr)
+							usr.faction:AddMember(usr)
 
-								usr.Refresh_Faction_Verbs()
-								usr.Refresh_Squad_Verbs()
-								usr.name_selecting = 0
-								spawn(10)usr.Refresh_Mouse()
+							usr.Refresh_Faction_Verbs()
+							usr.Refresh_Squad_Verbs()
+							usr.name_selecting = 0
+							spawn(10) usr.Refresh_Mouse()
 						else
 							usr.FIN = 0
 					else
